@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Gonzales | Academic & Clinical Portfolio</title>
+    <style>
+        :root {
+            --primary: #0a2540;
+            --secondary: #635bff;
+            --accent: #00d4b2;
+            --text: #425466;
+            --bg: #f6f9fc;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), #1a3a5f);
+            color: var(--white);
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        .header-content p {
+            font-size: 1.2rem;
+            color: #adbdcc;
+            font-weight: 500;
+        }
+
+        .badge-container {
+            margin-top: 1.5rem;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--accent);
+            margin: 0 0.25rem;
+            border: 1px solid rgba(0, 212, 178, 0.3);
+            display: inline-block;
+        }
+
+        main {
+            max-width: 900px;
+            margin: -3rem auto 4rem auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(50, 50, 93, 0.05), 0 1px 3px rgba(0, 0, 0, 0.03);
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--bg);
+            padding-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card {
+            border-left: 4px solid var(--secondary);
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card:last-child {
+            margin-bottom: 0;
+        }
+
+        .card h3 {
+            color: var(--primary);
+            font-size: 1.2rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .meta {
+            font-size: 0.9rem;
+            color: var(--secondary);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.25rem;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--secondary);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-category h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #a0aec0;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            header { padding: 3rem 1rem; }
+            main { margin-top: -1.5rem; }
+            section { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Diego Gonzales</h1>
+            <p>Aspiring Physician | EMT-In-Training | STEM Educator</p>
+            <div class="badge-container">
+                <span class="badge">Pre-Med Track</span>
+                <span class="badge">Emergency Medicine Focus</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="clinical">
+            <h2>🩺 Clinical & Emergency Medical Experience</h2>
+            
+            <div class="card">
+                <h3>Emergency Medical Technician (EMT) Course & Training</h3>
+                <div class="meta">[Name of Training Institution] • Expected Certification: Fall 2026</div>
+                <ul>
+                    <li>Completing rigorous didactic and practical training covering patient assessment, trauma care, and basic life support (BLS).</li>
+                    <li>Engaging in hands-on clinical simulations and emergency vehicle operations.</li>
+                    <li>Developing rapid decision-making skills and emotional resilience under high-pressure scenarios.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Physician Shadowing</h3>
+                <div class="meta">6+ Hours Completed (Ongoing)</div>
+                <ul>
+                    <li>Observed patient-technician workflows and diagnostic strategies within medical imaging environments (MRI).</li>
+                    <li>Gained crucial context on the ecosystem of hospital care, inspiring a transition toward active emergency medical deployment.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="academics">
+            <h2>🔬 Academic Rigor & Coursework</h2>
+            <div class="card">
+                <h3>Advanced Placement Curriculum</h3>
+                <div class="meta">Targeting Heavy STEM Mastery & Multi-Disciplinary Excellence</div>
+                <ul>
+                    <li><strong>AP Chemistry:</strong> Completed foundational college-level chemistry with an emphasis on analytical laboratory experiments.</li>
+                    <li><strong>AP Biology:</strong> Active enrollment focusing on molecular biology, genetics, and metabolic processes.</li>
+                    <li><strong>AP Calculus AB:</strong> Developing quantitative data analysis and advanced problem-solving modeling.</li>
+                    <li><strong>Additional Advanced Coursework:</strong> AP Computer Science A, AP Computer Science Principles, AP Precalculus, AP US History, AP World History, AP Macroeconomics, and AP Microeconomics.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="leadership">
+            <h2>👥 Leadership & Community Engagement</h2>
+            <div class="card">
+                <h3>STEM Camp Student Leader</h3>
+                <div class="meta">40+ Volunteer Hours with Camp Invention</div>
+                <ul>
+                    <li>Coordinated and taught interactive science and mathematical concepts to groups of elementary and middle school students.</li>
+                    <li>Translated complex technical ideas into easily understood activities, developing communication mechanisms crucial for future patient education.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>🛠️ Skills & Certifications</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Medical Skills</h4>
+                    <ul>
+                        <li>CPR Certified (BLS)</li>
+                        <li>Emergency Triage Basics</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Technical & Academic</h4>
+                    <ul>
+                        <li>Laboratory Diagnostics</li>
+                        <li>Data Analysis</li>
+                        <li><strong>Capstone Project (In Progress):</strong> Developing a system designed to detect and alert early signs of potential cardiac emergencies.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Diego Gonzales. Connect via <a href="mailto:dgonzales0156@gmail.com">Email</a></p>
+    </footer>
+
+</body>
+</html>
